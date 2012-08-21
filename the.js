@@ -1,3 +1,7 @@
+// Requires jQuery
+
+	var fadeDuration = 1000;
+	var fadeInterval = 5000;
 
 	$(document).ready(function() {
 		var bannerRotate = function() {
@@ -13,10 +17,10 @@
 			var c=0;
 
 			setInterval(function() {
-				$('div[sequence='+c+']').fadeOut(1000);
+				$('div[sequence='+c+']').fadeOut(fadeDuration);
 				(c<frameCount) ? c++ : c=0;
-				$('div[sequence='+c+']').fadeIn(1000);
-			}, 5000);
+				$('div[sequence='+c+']').fadeIn(fadeDuration);
+			}, fadeInterval);
 		};
 
 		bannerRotate();

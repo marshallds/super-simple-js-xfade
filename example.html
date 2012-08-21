@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>super simple js xfade example</title>
+
+
+<style type="text/css" media="screen">
+	#banner {
+		position:relative;
+		height:300px;
+		overflow:hidden;
+	}
+	#banner div {
+		position:absolute;
+		top:0;
+		width:100%;
+		display:none;
+	}
+	#banner div:first-child {
+		display:block;
+	}
+</style>
+ 
+  </head>
+
+  <body>
+
+	<section id="banner">
+		<div>
+			<img src="" height="300" width="500" alt="img1">
+		</div>
+		<div>
+			<img src="" height="300" width="500" alt="img2">
+		</div>
+		<div>
+			<h1>You can put other stuff in the div too!</h1>
+			<p>text!</p>  
+		</div>
+	</section>
+	
+	
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="the.js"></script>
+
+
+</body>
+</html>
